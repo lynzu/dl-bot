@@ -1,0 +1,22 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "dotenv": "^16.0.3",
+    "fast-folder-size": "^1.7.1",
+    "fs": "^0.0.1-security",
+    "nodejs-file-downloader": "^4.10.6",
+    "path": "^0.12.7",
+    "tgsnake": "^2.1.0",
+    "vix-api": "^1.1.1"
+  }
+}
