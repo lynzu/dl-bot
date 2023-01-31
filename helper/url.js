@@ -1,13 +1,10 @@
-function isUrl(url) {
-  var result;
-  var match;
-  if (match = url.match(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n\?\=]+)/im)) {
-    result = match[1];
-    if (match = result.match(/^[^\.]+\.(.+\..+)$/)) {
-      result = match[1];
-    }
- }
- return result;
-};
+async function isUrl(url){
+  let result = null
+  try {
+    result = url.match(/^(?:.*\:\/?\/)?(?<domain>[\w\-\.]*)/i).groups.domain
+      .match(/(?<root>[\w\-]*(\.\w{3,}|\.\w{2}|\.\w{2}\.\w{2}))$/).groups.root;
+  } catch(ignore) {}
+  return result;
+}
 
 module.exports = { isUrl };

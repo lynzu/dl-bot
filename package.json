@@ -10,13 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bluebird": "^3.7.2",
     "dotenv": "^16.0.3",
     "fast-folder-size": "^1.7.1",
     "fs": "^0.0.1-security",
+    "install": "^0.13.0",
     "nodejs-file-downloader": "^4.10.6",
+    "npm": "^9.4.0",
     "path": "^0.12.7",
-    "tgsnake": "^2.1.0",
+    "telegraf": "^4.11.2",
     "vix-api": "^1.1.1"
   }
 }
